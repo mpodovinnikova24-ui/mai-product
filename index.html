@@ -1,0 +1,350 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI-контент на неделю — MAI</title>
+<style>
+:root {
+  --navy:#08265e;
+  --blue:#1263e6;
+  --light:#edf5ff;
+  --text:#19365f;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#f8fbff;
+  color:var(--text);
+}
+.container {
+  max-width:1080px;
+  margin:auto;
+  padding:0 24px;
+}
+.hero {
+  background:linear-gradient(135deg,#071e50,#1157cb 65%,#70bfff);
+  color:white;
+  padding:30px 0 90px;
+  overflow:hidden;
+}
+nav {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.logo {
+  font-size:26px;
+  font-weight:900;
+  letter-spacing:2px;
+}
+.logo small {
+  display:block;
+  font-size:11px;
+  letter-spacing:0;
+  font-weight:400;
+}
+.navlink { color:white; text-decoration:none; font-size:14px; }
+.hero-content {
+  display:grid;
+  grid-template-columns:1.2fr 0.8fr;
+  align-items:center;
+  gap:40px;
+  padding-top:85px;
+}
+.eyebrow {
+  font-size:12px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  font-weight:bold;
+}
+h1 {
+  font-size:clamp(40px,6vw,70px);
+  line-height:1.04;
+  margin:18px 0 24px;
+}
+.hero p {
+  font-size:19px;
+  line-height:1.6;
+  max-width:570px;
+}
+.btn {
+  display:inline-block;
+  background:white;
+  color:#0e52be;
+  padding:17px 26px;
+  border-radius:12px;
+  text-decoration:none;
+  font-weight:800;
+  margin-top:22px;
+  transition:transform .2s;
+}
+.btn:hover { transform:translateY(-3px); }
+.btn-blue {
+  background:var(--blue);
+  color:white;
+}
+.mockup {
+  background:linear-gradient(145deg,#ffffff2e,#ffffff0d);
+  border:1px solid #ffffff55;
+  border-radius:24px;
+  padding:28px;
+  box-shadow:0 25px 60px #001b5580;
+  transform:rotate(3deg);
+}
+.mockup-card {
+  background:white;
+  color:var(--navy);
+  border-radius:14px;
+  padding:24px;
+  margin-bottom:15px;
+}
+.mockup-card b { font-size:22px; }
+.mockup-card span {
+  display:block;
+  color:#5478aa;
+  font-size:13px;
+  margin-top:8px;
+}
+.mockup-bar {
+  height:11px;
+  background:#dbeaff;
+  border-radius:20px;
+  margin-top:12px;
+}
+.mockup-bar.short { width:65%; }
+section { padding:85px 0; }
+h2 {
+  font-size:clamp(30px,4vw,44px);
+  color:var(--navy);
+  margin:0 0 18px;
+}
+.lead {
+  font-size:17px;
+  line-height:1.7;
+  color:#547092;
+  max-width:730px;
+}
+.grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+  margin-top:35px;
+}
+.card {
+  background:white;
+  border:1px solid #dce9fa;
+  border-radius:18px;
+  padding:28px;
+  box-shadow:0 8px 25px #17447a0a;
+}
+.card .num {
+  color:var(--blue);
+  font-size:13px;
+  font-weight:bold;
+}
+.card h3 {
+  color:var(--navy);
+  font-size:21px;
+  margin:14px 0;
+}
+.card p { line-height:1.7; color:#597392; }
+.tint { background:var(--light); }
+.two {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px;
+  margin-top:35px;
+}
+.list {
+  background:white;
+  border-radius:18px;
+  padding:30px;
+  line-height:2;
+}
+details {
+  background:white;
+  padding:22px;
+  border-radius:12px;
+  margin:12px 0;
+  border:1px solid #dfebfa;
+}
+summary {
+  cursor:pointer;
+  font-weight:bold;
+  color:var(--navy);
+}
+details p { line-height:1.7; color:#597392; }
+.cta {
+  background:linear-gradient(135deg,#08265e,#176be7);
+  color:white;
+  text-align:center;
+}
+.cta h2 { color:white; }
+.cta p {
+  color:#d7e8ff;
+  line-height:1.7;
+}
+footer {
+  background:#071c44;
+  color:#a9c4ea;
+  padding:28px 0;
+  text-align:center;
+  font-size:13px;
+}
+@media(max-width:760px) {
+  .hero-content,.grid,.two { grid-template-columns:1fr; }
+  .hero-content { padding-top:55px; }
+  .hero { padding-bottom:65px; }
+  .mockup { transform:none; }
+  section { padding:60px 0; }
+  .navlink { font-size:12px; }
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="container">
+    <nav>
+      <div class="logo">MAI ✦<small>MashapomogAI</small></div>
+      <a class="navlink" href="#inside">Что внутри ↓</a>
+    </nav>
+
+    <div class="hero-content">
+      <div>
+        <div class="eyebrow">Практический AI-комплект для экспертов</div>
+        <h1>AI-контент<br>на неделю</h1>
+        <p>Подготовь идеи, тексты и сценарии публикаций на 7 дней с помощью ChatGPT — без ежедневного поиска тем и сложных программ.</p>
+        <a class="btn" href="#get">Посмотреть комплект →</a>
+      </div>
+
+      <div class="mockup">
+        <div class="mockup-card">
+          <b>MAI ✦</b>
+          <span>AI-контент на неделю</span>
+          <div class="mockup-bar"></div>
+          <div class="mockup-bar short"></div>
+        </div>
+        <div class="mockup-card">
+          <b>7 дней контента</b>
+          <span>PDF + Excel + готовые промпты</span>
+          <div class="mockup-bar"></div>
+          <div class="mockup-bar short"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <div class="eyebrow">Знакомая ситуация?</div>
+    <h2>Контент нужен постоянно.<br>А идеи заканчиваются.</h2>
+    <p class="lead">Ты разбираешься в своей теме, но ведение блога превращается в отдельную работу. Нужно придумать заголовок, написать текст, подготовить Reels и не забыть про Stories.</p>
+    <div class="grid">
+      <div class="card"><div class="num">01</div><h3>Не знаешь, о чём писать</h3><p>Каждый день приходится начинать с пустого листа.</p></div>
+      <div class="card"><div class="num">02</div><h3>ChatGPT пишет шаблонно</h3><p>Ответы получаются общими и не похожими на твой стиль.</p></div>
+      <div class="card"><div class="num">03</div><h3>Нет единой системы</h3><p>Идеи, черновики и сценарии разбросаны по разным местам.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="tint" id="inside">
+  <div class="container">
+    <div class="eyebrow">Что внутри</div>
+    <h2>Два файла. Одна понятная система.</h2>
+    <p class="lead">Не просто список запросов, а последовательный маршрут от темы до подготовленного контента.</p>
+    <div class="two">
+      <div class="card">
+        <div class="num">ФАЙЛ 01</div>
+        <h3>PDF-гайд на 10 страниц</h3>
+        <p>Семь рабочих промптов, инструкции, примеры и финальный чек-лист.</p>
+      </div>
+      <div class="card">
+        <div class="num">ФАЙЛ 02</div>
+        <h3>Excel-планер</h3>
+        <p>Четыре вкладки: инструкция, контент на 7 дней, банк идей и AI-промпты. Выпадающие статусы и автоматический подсчёт готовности.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="eyebrow">Как это работает</div>
+    <h2>Всего три этапа</h2>
+    <div class="grid">
+      <div class="card"><div class="num">ШАГ 01</div><h3>Выбираешь тему</h3><p>С помощью промптов находишь проблемы аудитории и идеи публикаций.</p></div>
+      <div class="card"><div class="num">ШАГ 02</div><h3>Создаёшь черновики</h3><p>Готовишь тексты, карусели, сценарии Reels и Stories в ChatGPT.</p></div>
+      <div class="card"><div class="num">ШАГ 03</div><h3>Собираешь неделю</h3><p>Переносишь результаты в Excel, назначаешь даты и отмечаешь готовность.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="tint">
+  <div class="container">
+    <div class="eyebrow">Кому подойдёт</div>
+    <h2>Если ты ведёшь экспертный блог</h2>
+    <div class="two">
+      <div class="list">
+        ✓ Экспертам и консультантам<br>
+        ✓ Предпринимателям<br>
+        ✓ Авторам небольших блогов<br>
+        ✓ Тем, кто только начинает работать с AI
+      </div>
+      <div class="list">
+        <b>Что понадобится:</b><br>
+        ✓ Доступ к ChatGPT<br>
+        ✓ Microsoft Excel<br>
+        ✓ Твоя тема и немного времени на редактуру<br>
+        ✓ Желание вести блог системнее
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="eyebrow">Ответы на вопросы</div>
+    <h2>Частые вопросы</h2>
+    <details>
+      <summary>Подойдёт ли новичку?</summary>
+      <p>Да. В гайде описаны шаги и приведены запросы, которые можно копировать в ChatGPT и адаптировать под себя.</p>
+    </details>
+    <details>
+      <summary>Нужно ли записывать себя на видео?</summary>
+      <p>Нет. В комплекте есть промпт для создания сценариев Reels без лица.</p>
+    </details>
+    <details>
+      <summary>Есть ли внутри видеоуроки?</summary>
+      <p>Нет. Комплект состоит из PDF-инструкции и Excel-шаблона.</p>
+    </details>
+    <details>
+      <summary>ChatGPT сам опубликует контент?</summary>
+      <p>Нет. Система помогает подготовить черновики и организовать работу. Проверка, оформление и публикация остаются за тобой.</p>
+    </details>
+  </div>
+</section>
+
+<section class="cta" id="get">
+  <div class="container">
+    <div class="eyebrow">MAI · AI-контент на неделю</div>
+    <h2>Собери свою контент-неделю</h2>
+    <p>PDF-гайд, семь промптов и Excel-планер — в одном комплекте.</p>
+    <p><b>Скоро откроем доступ к продукту.</b></p>
+    <a class="btn" href="https://www.instagram.com/mashapomogai/" target="_blank" rel="noopener noreferrer">
+      Перейти в Instagram MAI →
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">MAI ✦ MashapomogAI · AI-инструменты для экспертного контента</div>
+</footer>
+
+</body>
+</html>
