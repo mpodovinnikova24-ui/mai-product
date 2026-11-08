@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>AI-контент на неделю — MAI</title>
+  <title>MAI — AI-инструменты для контента | MAI MINI и AI-контент на неделю</title>
 
   <meta name="description"
-        content="AI-контент на неделю: PDF-гайд, 7 промптов ChatGPT и Excel-планер. Цифровой комплект MAI для создания контента.">
+        content="MAI: AI MINI-редактор готовых текстов за 350 ₽ и комплект AI-контент на неделю за 990 ₽. Практические цифровые инструменты для создания контента.">
 
   <style>
     :root {
@@ -389,6 +389,19 @@
         padding: 24px;
       }
     }
+
+    /* Линейка продуктов MAI */
+    .product-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+    .product-card {display:flex;flex-direction:column;gap:12px}
+    .product-card .price {margin:0}
+    .product-card .btn {margin-top:auto;background:var(--blue);color:#fff}
+    .product-card .small {margin:0}
+    .product-tag {font-size:12px;letter-spacing:1.5px;font-weight:900;color:var(--blue)}
+    .mini-panel {border-radius:24px;background:#fff;border:1px solid var(--line);padding:30px}
+    .mini-panel .btn {background:var(--blue);color:#fff}
+    .mini-panel p {color:var(--muted)}
+    .mini-steps {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+    @media(max-width:800px){.product-grid,.mini-steps{grid-template-columns:1fr}}
   </style>
 </head>
 
@@ -401,8 +414,8 @@
 
       <nav class="nav">
         <div class="logo">MAI ✦</div>
-        <a class="nav-link" href="#about">
-          О продукте ↓
+        <a class="nav-link" href="#products">
+          Выбрать продукт ↓
         </a>
       </nav>
 
@@ -410,28 +423,25 @@
 
         <div>
           <div class="eyebrow">
-            MashapomogAI · Цифровой комплект
+            MashapomogAI · Цифровые продукты
           </div>
 
           <h1>
-            AI-контент<br>
-            на неделю
+            AI-инструменты<br>
+            для контента
           </h1>
 
           <p>
-            Перестань каждый день придумывать,
-            что опубликовать.
-            Собери план контента на 7 дней
-            с помощью ChatGPT и удобного Excel-планера.
+            Выбирай то, что нужно сейчас: улучши готовый текст с MAI MINI или собери контент-план на неделю с помощью ChatGPT.
           </p>
 
           <div class="buttons">
-            <a class="btn btn-white" href="#price">
-              Посмотреть комплект
+            <a class="btn btn-white" href="#products">
+              Выбрать продукт
             </a>
 
-            <a class="btn btn-outline" href="#inside">
-              Что внутри?
+            <a class="btn btn-outline" href="#mini">
+              О MAI MINI
             </a>
           </div>
         </div>
@@ -445,14 +455,14 @@
             </div>
 
             <div class="preview-title">
-              1 идея.<br>
-              7 дней.<br>
+              Твои идеи.<br>
+              Твой стиль.<br>
               Твой контент.
             </div>
 
             <div class="preview-bottom">
-              PDF-гайд + AI-промпты<br>
-              + Excel-планер
+              MAI MINI · 350 ₽<br>
+              AI-контент на неделю · 990 ₽
             </div>
           </div>
         </div>
@@ -461,6 +471,70 @@
     </div>
   </header>
 
+
+  <!-- ВЫБОР ПРОДУКТА -->
+  <section id="products">
+    <div class="container">
+      <div class="section-intro">
+        <div class="eyebrow">Продукты MAI</div>
+        <h2>Что нужно тебе сейчас?</h2>
+        <p>Два самостоятельных инструмента для разных задач. Покупай только тот, который подходит.</p>
+      </div>
+      <div class="product-grid">
+        <article class="card product-card">
+          <div class="product-tag">MAI MINI · AI-РЕДАКТОР</div>
+          <h3>Убери ChatGPT из своего текста</h3>
+          <p>Уже есть черновик, но он звучит шаблонно? Два режима помогут сделать его естественнее или интереснее, сохранив твой смысл.</p>
+          <ul class="list">
+            <li>PDF-гайд, 9 страниц</li>
+            <li>Мастер-промпт v2.6 в отдельном TXT</li>
+            <li>Примеры «до / после» и чек-лист</li>
+          </ul>
+          <div class="price">350 ₽</div>
+          <p class="small">Разовая покупка · без подписки</p>
+          <a class="btn" href="https://link.payform.ru/?paymentLinkId=4f49eb7c-b486-4cef-a3f6-4f2088d2b3ef" target="_blank" rel="noopener noreferrer">Купить MAI MINI за 350 ₽</a>
+          <a href="#mini">Подробнее о MAI MINI ↓</a>
+        </article>
+        <article class="card product-card">
+          <div class="product-tag">MAI · DIGITAL KIT</div>
+          <h3>AI-контент на неделю</h3>
+          <p>Не хватает идей и системы? Собери контент на 7 дней с помощью готовых промптов и Excel-планера.</p>
+          <ul class="list">
+            <li>PDF-гайд, 10 страниц</li>
+            <li>7 промптов для ChatGPT</li>
+            <li>Excel-планер с четырьмя вкладками</li>
+          </ul>
+          <div class="price">990 ₽</div>
+          <p class="small">Разовая покупка · без подписки</p>
+          <a class="btn" href="https://link.payform.ru/?paymentLinkId=fa416552-c953-4fe9-ad6b-43715dcc3df1" target="_blank" rel="noopener noreferrer">Купить комплект за 990 ₽</a>
+          <a href="#inside">Подробнее о комплекте ↓</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ПОДРОБНЕЕ О MAI MINI -->
+  <section class="tint" id="mini">
+    <div class="container">
+      <div class="section-intro">
+        <div class="eyebrow">MAI MINI / 350 ₽</div>
+        <h2>Не переписывай текст с нуля. Отредактируй готовый.</h2>
+        <p>MAI MINI — мастер-промпт для редактирования готовых текстов в ChatGPT. Не создаёт контент-стратегию и не гарантирует охваты или продажи.</p>
+      </div>
+      <div class="mini-steps">
+        <div class="card"><div class="num">РЕЖИМ 1</div><h3>Сделай естественнее</h3><p>Убери AI-штампы, повторы и неестественные фразы без изменения смысла.</p></div>
+        <div class="card"><div class="num">РЕЖИМ 2</div><h3>Сделай интереснее</h3><p>Улучши начало, последовательность абзацев и подачу, не выдумывая новых фактов.</p></div>
+        <div class="card"><div class="num">ПОЛУЧЕНИЕ</div><h3>Сразу после оплаты</h3><p>На email придёт ссылка на ZIP-архив с PDF-инструкцией и TXT-промптом.</p></div>
+      </div>
+      <div class="mini-panel" style="margin-top:22px">
+        <h3>Что получишь за 350 ₽</h3>
+        <p>9 страниц инструкции, мастер-промпт v2.6, примеры «до / после» и чек-лист перед публикацией. Для работы нужен доступ к ChatGPT и готовый текст.</p>
+        <div class="buttons"><a class="btn" href="https://link.payform.ru/?paymentLinkId=4f49eb7c-b486-4cef-a3f6-4f2088d2b3ef" target="_blank" rel="noopener noreferrer">Купить MAI MINI за 350 ₽</a><a class="btn" style="border:1px solid var(--line);background:#fff;color:var(--blue)" href="offer.html">Условия покупки</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ПОДРОБНЕЕ О КОМПЛЕКТЕ ЗА 990 ₽ -->
   <!-- ПРОБЛЕМА -->
 
   <section id="about">
@@ -771,24 +845,22 @@
       </div>
 
       <h2>
-        Контент на неделю
-        начинается с одной идеи
+        Выбери инструмент
+        под свою задачу
       </h2>
 
       
 <p>
-  Получи PDF-гайд с 7 промптами
-  и Excel-планер для контента.
-  После оплаты ссылка на материалы
-  придёт на электронную почту.
+  MAI MINI улучшает готовые тексты, а комплект за 990 ₽ помогает планировать контент на неделю. После оплаты материалы придут на электронную почту.
 </p>
      
 <a class="btn btn-white"
    href="https://link.payform.ru/?paymentLinkId=fa416552-c953-4fe9-ad6b-43715dcc3df1"
    target="_blank"
    rel="noopener noreferrer">
-  Купить AI-контент на неделю
+  Купить AI-контент на неделю — 990 ₽
 </a>
+<a class="btn btn-outline" style="margin-left:10px" href="https://link.payform.ru/?paymentLinkId=4f49eb7c-b486-4cef-a3f6-4f2088d2b3ef" target="_blank" rel="noopener noreferrer">Купить MAI MINI — 350 ₽</a>
     </div>
   </section>
 
